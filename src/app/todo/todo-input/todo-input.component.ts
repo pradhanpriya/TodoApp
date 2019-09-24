@@ -10,7 +10,7 @@ export class TodoInputComponent implements OnInit{
 
   constructor() { }
   list=[]
-  item=""
+  item=" "
   show(){
     this.list.push(this.item);
   }
