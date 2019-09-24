@@ -1,1 +1,4 @@
-<p>todo-input works!</p>
+
+<input type="text" name="new_item" placeholder="Enter an item" [(ngModel)]="item">
+<input type="button" name="Submit" value="Submit" (click)="show()">
+<li *ngFor="let i of list">{{i}}</li>

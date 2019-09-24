@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class TodoInputComponent implements OnInit {
 
   constructor() { }
-
+  item=" ";
+  list=["one","two"];
+  show(){
+    this.list.push(this.item);
+  }
   ngOnInit() {
   }
 
