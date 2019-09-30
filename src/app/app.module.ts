@@ -9,6 +9,7 @@ import { TodoInputComponent } from './todo/todo-input/todo-input.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
 import { TodoFooterComponent } from './todo/todo-footer/todo-footer.component';
 import { FormsModule } from '@angular/forms';
+import { todoService } from './todo-services';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [todoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

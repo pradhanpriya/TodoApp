@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { todoService } from 'src/app/todo-services';
+
 
 
 @Component({
@@ -8,11 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoInputComponent implements OnInit{
 
-  constructor() { }
-  list=[]
+  constructor(private t:todoService) { }
   item=" "
   show(){
-    this.list.push(this.item);
+    this.t.additem(this.item);
+    
   }
   ngOnInit() {
   }
