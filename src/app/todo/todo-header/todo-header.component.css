@@ -1,0 +1,7 @@
+h1{
+    background:#94b39c;
+    height : 500 px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}

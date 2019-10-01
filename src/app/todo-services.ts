@@ -10,5 +10,7 @@ export class todoService{
     getlist(){
         return this.list;
     }
-   
+    delTodo(todo){
+        this.list.splice(todo);
+    }
 }

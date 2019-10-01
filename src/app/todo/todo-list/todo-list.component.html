@@ -1,2 +1,3 @@
-<li *ngFor="let i of list">{{i}}</li>
+<li *ngFor="let i of list;let todo=index">{{i}}<button (click)="deleteTodo(todo)">delete</button></li>
+
 
